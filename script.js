@@ -32,19 +32,27 @@ function addTask() {
     icon.classList.add("icon");
     newDiv.appendChild(icon);
 
-    const check = document.createElement("i"); // Check icon
-    check.classList.add("fa-solid");
-    check.classList.add("fa-check-circle");
-    check.classList.add("fa-lg");
-    check.classList.add("check");
-    icon.appendChild(check);
+    const checked = document.createElement("div");
+    checked.classList.add("checked");
+    newDiv.appendChild(checked);
 
     // const eye = document.createElement("i"); // Eye icon
     // eye.classList.add("fa-solid");
     // eye.classList.add("fa-eye");
     // eye.classList.add("fa-lg");
     // eye.classList.add("eye");
-    // icon.appendChild(eye);
+    // checked.appendChild(eye);
+
+    const check = document.createElement("i"); // Check icon
+    check.classList.add("fa-solid");
+    check.classList.add("fa-check-circle");
+    check.classList.add("fa-lg");
+    check.classList.add("check");
+    checked.appendChild(check);
+
+    const cmp = document.createElement("h4");
+    cmp.innerText = "";
+    checked.appendChild(cmp);
 
     const btn = document.createElement("div"); // Delete button div
     btn.classList.add("btn");
@@ -62,15 +70,16 @@ function addTask() {
       paraElement.remove();
       icon.remove();
       check.remove();
-      eye.remove();
+      // eye.remove();
       btn.remove();
+      trash.remove();
+    });
+    check.addEventListener("click", function () {
+      // Function to completed data
+      cmp.innerText = "Completed";
+      cmp.style.color = "#27d914";
+      check.style.color = "#27d914";
     });
   }
   input.value = "";
-}
-
-function deleTask() {
-  if (para.value !== "") {
-    para.innerHTML = "";
-  }
 }
