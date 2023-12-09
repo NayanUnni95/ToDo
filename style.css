@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+}
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #6de3be;
+  --primary-black-color: #000000;
+  --red: red;
+  --blue: #558ce6;
+  --green: #08d420;
+  --add-btn: #03ab17;
+  --view-btn: lightblue;
+  --delete-btn: red;
+}
+.dark-mode {
+  --primary-color: #000000;
+  --primary-black-color: #ffffff;
+  --secondary-color: #ffffff;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+}
+.frame {
+  width: 60%;
+  /* max-height: 75%; */
+  height: 75%;
+  border-radius: 0.5rem;
+  /* background-color: var(--secondary-color); */
+  background: rgb(73, 180, 58);
+  background: linear-gradient(
+    328deg,
+    rgba(73, 180, 58, 1) 0%,
+    rgba(29, 253, 209, 1) 50%,
+    rgba(69, 156, 252, 1) 100%
+  );
+}
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+.head i {
+  color: var(--primary-color);
+}
+.head h1 a {
+  color: var(--primary-color);
+}
+.head-input-bar {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0.8rem;
+}
+.head .input-data {
+  width: 29rem;
+  height: 3rem;
+  border-radius: 5rem;
+  border: none;
+  display: flex;
+  font-size: medium;
+  margin-right: 10px;
+  padding-left: 2rem;
+  font-family: "Righteous", sans-serif;
+  color: var(--primary-color);
+  background-color: var(--primary-black-color);
+}
+::-webkit-input-placeholder {
+  color: var(--primary-color);
+}
+.head .btn1 {
+  width: 6rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.5rem;
+  background-color: var(--add-btn);
+}
+.head .btn:hover {
+  background-color: #10b31b;
+}
+.main-body {
+  max-height: 70%;
+  /* height: 70%; */
+  overflow-y: scroll;
+}
+.main-body::-webkit-scrollbar {
+  display: none;
+}
+.data-div {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  background-color: var(--primary-color);
+}
+.data-div h2 {
+  font-family: "Caveat", cursive;
+}
+.data-div p {
+  font-family: "Gruppo", sans-serif;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+.name,
+.des,
+.eye,
+.null,
+.check,
+.trash {
+  color: var(--primary-black-color);
+  cursor: pointer;
+}
+.data1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.data1 .btn {
+  width: 5rem;
+  height: 4rem;
+  margin-left: 1rem;
+  display: flex;
+  /* display: none; */
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  background-color: var(--delete-btn);
+}
+.icon i {
+  margin: 1rem;
+}
+.eye:hover {
+  color: var(--blue);
+}
+.check:hover {
+  color: var(--green);
+}
+.trash:hover {
+  color: var(--red);
+}
+.btn i {
+  color: var(--primary-color);
+}
+.btn:hover {
+  color: var(--primary-color);
+}
+
+.divData {
+  width: 10rem;
+  height: 5rem;
+  background-color: brown;
+}

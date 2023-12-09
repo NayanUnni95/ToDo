@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="static/check.png" type="image/icon type" />
+    <title>ToDo...</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="frame">
+        <div class="head">
+          <i
+            id="icon"
+            class="fa-solid fa-sun fa-lg"
+            style="cursor: pointer"
+          ></i>
+          <div class="head-input-bar">
+            <input
+              id="input-box"
+              class="input-data"
+              type="text"
+              placeholder="Enter the data..."
+            />
+            <a class="btn1" onclick="addTask()" href="#">
+              <i class="fa-solid fa-plus fa-lg" style="cursor: pointer"></i>
+            </a>
+          </div>
+        </div>
+        <div id="mDiv" class="main-body"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
