@@ -23,20 +23,24 @@
   <body>
     <div class="container">
       <div class="frame">
-        <div class="head">
+        <div class="head flex flex-item">
           <i
             id="icon"
             class="fa-solid fa-sun fa-lg"
             style="cursor: pointer"
           ></i>
-          <div class="head-input-bar">
+          <div class="head-input-bar flex">
             <input
               id="input-box"
-              class="input-data"
+              class="input-data flex"
               type="text"
               placeholder="Enter the data..."
             />
-            <a class="btn1" onclick="addTask()" href="#">
+            <a
+              class="btn1 flex flex-item flex-content"
+              onclick="addTask()"
+              href="#"
+            >
               <i class="fa-solid fa-plus fa-lg" style="cursor: pointer"></i>
             </a>
           </div>
@@ -47,3 +51,17 @@
     <script src="script.js"></script>
   </body>
 </html>
+
+<div id="mDiv" class="main-body">
+  <div class="data1">
+    <div class="data-div">
+      <p class="des">hello</p>
+      <div class="icon"></div>
+      <div class="checked">
+        <i class="fa-solid fa-check-circle fa-lg check"></i>
+        <h4></h4>
+      </div>
+    </div>
+    <div class="btn"><i class="fa-solid fa-trash fa-lg trash"></i></div>
+  </div>
+</div>
