@@ -49,7 +49,7 @@
 }
 .head {
   justify-content: space-around;
-  padding: 1rem;
+  padding: 1rem 0rem 0rem 1rem;
   border-radius: 0.5rem;
 }
 .head i {
@@ -165,8 +165,9 @@
     height: 100vh;
     border-radius: 0;
   }
-  .head {
-    padding: 1rem 0 0 1rem;
+  .head .input-data[type="text"] {
+    width: 11.5rem;
+    margin-left: -1rem;
   }
   .data-div {
     width: 50%;
