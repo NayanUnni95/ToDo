@@ -1,5 +1,9 @@
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Righteous", sans-serif;
 }
 :root {
   --primary-color: #ffffff;
@@ -17,9 +21,6 @@
   --primary-black-color: #ffffff;
   --secondary-color: #ffffff;
 }
-a {
-  text-decoration: none;
-}
 .flex {
   display: flex;
 }
@@ -32,17 +33,12 @@ a {
 .container {
   width: 100%;
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: var(--primary-color);
 }
 .frame {
   width: 60%;
-  /* max-height: 75%; */
   height: 75%;
   border-radius: 0.5rem;
-  /* background-color: var(--secondary-color); */
   background: rgb(73, 180, 58);
   background: linear-gradient(
     328deg,
@@ -52,8 +48,6 @@ a {
   );
 }
 .head {
-  /* display: flex;
-  align-items: center; */
   justify-content: space-around;
   padding: 1rem;
   border-radius: 0.5rem;
@@ -66,20 +60,17 @@ a {
 }
 .head-input-bar {
   width: 80%;
-  /* display: flex; */
   justify-content: space-evenly;
   padding: 0.8rem;
 }
 .head .input-data[type="text"] {
   width: 29rem;
-  height: 3rem;
+  height: 2.5rem;
   border-radius: 5rem;
   border: none;
-  /* display: flex; */
   font-size: medium;
   margin-right: 10px;
   padding-left: 2rem;
-  font-family: "Righteous", sans-serif;
   color: var(--primary-color);
   background-color: var(--primary-black-color);
   outline: none;
@@ -89,10 +80,7 @@ a {
 }
 .head .btn1 {
   width: 6rem;
-  height: 3rem;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
+  height: 2.5rem;
   flex-wrap: wrap;
   border-radius: 1.5rem;
   background-color: var(--add-btn);
@@ -101,8 +89,7 @@ a {
   background-color: #10b31b;
 }
 .main-body {
-  max-height: 70%;
-  /* height: 70%; */
+  max-height: 75%;
   overflow-y: scroll;
 }
 .main-body::-webkit-scrollbar {
@@ -110,8 +97,6 @@ a {
 }
 .data-div {
   width: 70%;
-  /* display: flex;
-  align-items: center; */
   justify-content: space-between;
   overflow: scroll;
   padding: 1rem;
@@ -139,19 +124,10 @@ a {
   color: var(--primary-black-color);
   cursor: pointer;
 }
-/* .data1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
 .data1 .btn {
   width: 5rem;
-  height: 4rem;
+  height: 3rem;
   margin-left: 1rem;
-  /* display: flex; */
-  /* display: none; */
-  /* align-items: center; */
-  /* justify-content: center; */
   border-radius: 0.5rem;
   background-color: var(--delete-btn);
 }
@@ -173,11 +149,6 @@ a {
 .btn:hover {
   color: var(--primary-color);
 }
-/* .checked {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-} */
 .checked i {
   margin-right: 0.5rem;
 }
@@ -196,5 +167,8 @@ a {
   }
   .head {
     padding: 1rem 0 0 1rem;
+  }
+  .data-div {
+    width: 50%;
   }
 }

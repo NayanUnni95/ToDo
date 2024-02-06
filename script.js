@@ -8,12 +8,13 @@ document.addEventListener("DOMContentLoaded", function () {
 let input = document.getElementById("input-box");
 let para = document.getElementById("para");
 
+let data = document.getElementById("mDiv"); // Main parent div
+// console.log(data);
 function addTask() {
   // Function to add data
   if (input.value === "") {
     alert("Empty Input Field...");
   } else {
-    let data = document.getElementById("mDiv"); // Main parent div
 
     const dataSection = `<div id="mDiv" class="main-body">
     <div class="data1 flex flex-item flex-content">
@@ -27,30 +28,30 @@ function addTask() {
         </div>
         <div class="btn flex flex-item flex-content"><i class="fa-solid fa-trash fa-lg trash"></i></div>
       </div>
-    </div>`
+      </div>`
     data.insertAdjacentHTML("beforeend", dataSection);
     input.value = '';
-
-    btn.addEventListener("click", function () {
-      // Function to delete data
-      newDiv.remove();
-      paraElement.remove();
-      icon.remove();
-      check.remove();
-      // eye.remove();
-      btn.remove();
-      trash.remove();
-    });
-    const check = document.querySelector(".checked");
-    check.addEventListener("click", function () {
-      // Function to completed data
-      console.log(".");
-      const cmp = document.querySelector(".h4");
-      cmp.innerText = "Completed";
-      cmp.style.color = "#27d914";
-      check.style.color = "#27d914";
-    });
+    // console.log(data);
   }
-  input.value = "";
-}
 
+  // Function to remove data
+  const btn = document.querySelector(".btn");
+  btn.addEventListener("click", () => {
+    console.log(".");
+    console.log(btn);
+    data.remove()
+  });
+
+
+  const check = document.querySelector(".checked");
+  check.addEventListener("click", function () {
+    // Function to completed data
+
+    const cmp = document.querySelector(".h4");
+    cmp.innerText = "Completed";
+    cmp.style.color = "#27d914";
+    check.style.color = "#27d914";
+  });
+
+
+}
